@@ -1,0 +1,139 @@
+body{
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 25px;
+}
+
+header, footer{
+    display: block;
+    padding: 10px;
+    font-size: 25px;
+    margin: 5px;
+}
+header{
+    text-align: right;
+}
+i{
+    color: white;
+}
+a{
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    flex-basis: 45%;
+}
+#about img{
+    width: 650px;
+    height: 350px;
+    margin: 5px;
+}
+ul{
+    list-style-type: disc;
+}
+
+#sites{
+    display: flex;
+    justify-content: space-around;
+}
+#sites div{
+    width: 250px;
+    margin: 5px;
+}
+#sites img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+@media all and (max-width: 900px){
+    body{
+        font-size: 20px;
+    }
+    #about img{
+        width: 500px;
+        height: 200px;
+    }
+    #sites div{
+        width: 200px;
+    }
+    #sites div img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media all and (max-width: 750px){
+    body{
+        font-size: 15px;
+    }
+    #about img{
+        width: 300px;
+        height: 150px;
+    }
+    #sites div{
+        width: 150px;
+    }
+    #sites div img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media all and (max-width: 550px){
+    body{
+        font-size: 12px;
+    }
+    #about img{
+        width: 250px;
+        height: 120px;
+    }
+    #sites div{
+        width: 100px;
+    }
+    #sites div img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media all and (max-width: 375px){
+    header, footer{
+        font-size: 20px;
+    }
+    body{
+        font-size: 12px;
+    }
+    #about{
+        flex-flow: column;
+        align-items: center;
+    }
+    #about img{
+        width: 225px;
+        height: 150px;
+    }
+    #sites{
+        flex-flow: column;
+    }
+    #sites div{
+        width: 100%;
+    }
+    #sites div img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media all and (max-width: 275px){
+    footer{
+        line-height: 3ex;
+    }
+}
+@media all and (max-width: 250px){
+    header{
+        font-size: 15px;
+    }
+    #about img{
+        width: 150px;
+        height: 100px;
+    }
+}
